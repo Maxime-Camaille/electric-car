@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  font-family: Gilroy, sans-serif;
+  overflow: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
