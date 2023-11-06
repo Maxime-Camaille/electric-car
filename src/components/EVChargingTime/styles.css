@@ -1,0 +1,250 @@
+/* CSS pour les écrans mobiles jusqu'à 480px de largeur */
+@media (max-width: 768px) {
+  .charging-time-section {
+    flex-direction: column; /* Diviser en colonne pour la version mobile */
+    background-color: #2f4858;
+    color: white;
+    padding: 48px 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .greenAccentuation {
+    color: #00ec99;
+  }
+  .section-title {
+    font-size: 9vw;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-bottom: 9vw;
+  }
+  .section-divider {
+    color: #00ec99;
+    background-color: #00ec99;
+    border: none;
+    border-radius: 5px;
+    line-height: 1.2;
+    font-weight: normal;
+    width: 50%;
+    height: 5px;
+    margin: auto;
+    margin-bottom: 9vw;
+  }
+  .charging-time-list {
+    list-style-type: none;
+    width: 65%;
+    text-align: start;
+    margin: auto;
+  }
+  .charging-time-list li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .charging-time-list li::before {
+    content: "✔"; /* Caractère d'icône */
+    color: #00ec99;
+    font-size: 24px; /* Ajustez la taille de l'icône selon vos besoins */
+    position: absolute; /* Position absolue par rapport au texte */
+    left: -2rem; /* Ajustez la position horizontale de l'icône */
+    top: 0; /* Ajustez la position verticale de l'icône */
+  }
+  .simulation-button {
+    width: 200px;
+    font-size: 18px;
+    min-width: 130px;
+    height: auto;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline;
+    border-radius: 980px;
+    border: 2px solid #00ec99;
+    background: #00ec99;
+    font-family: Satoshi-Variable, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    order: -2;
+    margin: 2rem auto 0 auto;
+  }
+  .simulation-button:hover {
+    background: white;
+    color: #00ec99;
+    border: 2px solid #00ec99;
+    scale: 1.1;
+  }
+}
+
+@media (min-width: 768px) and (max-width : 1024px){
+  .charging-time-section {
+    flex-direction: column; /* Diviser en colonne pour la version mobile */
+    background-color: #2f4858;
+    color: white;
+    padding: 48px 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .charging-time-list {
+    list-style-type: none;
+    width: 65%;
+    text-align: start;
+    margin: auto;
+    padding-left: 5%;
+  }
+  .charging-time-list li {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .section-title {
+    font-size: 48px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-bottom: 9vw;
+  }
+  .simulation-button {
+    width: 200px;
+    font-size: 18px;
+    min-width: 130px;
+    height: auto;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline;
+    border-radius: 980px;
+    border: 2px solid #00ec99;
+    background: #00ec99;
+    font-family: Satoshi-Variable, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    order: -2;
+    margin: 2rem auto 0 auto;
+  }
+  .simulation-button:hover {
+    background: white;
+    color: #00ec99;
+    border: 2px solid #00ec99;
+    scale: 1.1;
+  }
+  .charging-time-list li::before {
+    content: "✔"; /* Caractère d'icône */
+    color: #00ec99;
+    font-size: 24px; /* Ajustez la taille de l'icône selon vos besoins */
+    position: absolute; /* Position absolue par rapport au texte */
+    left: -2rem; /* Ajustez la position horizontale de l'icône */
+    top: 0; /* Ajustez la position verticale de l'icône */
+  }
+  .section-divider {
+    color: #00ec99;
+    background-color: #00ec99;
+    border: none;
+    border-radius: 5px;
+    line-height: 1.2;
+    font-weight: normal;
+    width: 70%;
+    height: 5px;
+    margin: auto;
+    margin-bottom: 48px;
+  }
+}
+@media (min-width: 1024px){
+  .left-div{
+    width: 60%;
+  }
+  .right-div{
+    width: 40%;
+    display: flex;
+  }
+  .charging-time-section {
+    background-color: #2f4858;
+    color: white;
+    padding: 48px 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+  .section-title {
+    font-size: 48px;
+    text-align: start;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-bottom: 48px;
+    padding-left: 48px;
+  }
+  .section-divider {
+    color: #00ec99;
+    background-color: #00ec99;
+    border: none;
+    border-radius: 5px;
+    line-height: 1.2;
+    font-weight: normal;
+    width: 50%;
+    height: 5px;
+    margin: auto;
+    margin-bottom: 48px;
+  }
+  .charging-time-list {
+    list-style-type: none;
+    width: 80%;
+    text-align: start;
+    margin: auto;
+  }
+  .charging-time-list li {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 24px;
+    position: relative;
+  }
+  .charging-time-list li::before {
+    content: "✔"; /* Caractère d'icône */
+    color: #00ec99;
+    font-size: 24px; /* Ajustez la taille de l'icône selon vos besoins */
+    position: absolute; /* Position absolue par rapport au texte */
+    left: -2rem; /* Ajustez la position horizontale de l'icône */
+    top: 0; /* Ajustez la position verticale de l'icône */
+  }
+  .check-icon {
+    color: #00ec99;
+    font-size: 30px;
+    margin-right: 0.2rem;
+  }
+  .simulation-button {
+    width: 200px;
+    font-size: 18px;
+    min-width: 130px;
+    height: auto;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline;
+    border-radius: 980px;
+    border: 2px solid #00ec99;
+    background: #00ec99;
+    font-family: Satoshi-Variable, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    order: 99;
+    margin: 0 auto 0 60%;
+    
+  }
+  .simulation-button:hover {
+    background: white;
+    color: #00ec99;
+    border: 2px solid #00ec99;
+    scale: 1.1;
+  }
+}
+.charging-image {
+  max-width: 100%;
+  height: auto;
+  padding-top: 3rem;
+}

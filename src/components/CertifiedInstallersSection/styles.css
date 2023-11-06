@@ -1,0 +1,167 @@
+/* Styles pour les écrans mobiles jusqu'à 480px de largeur */
+@media (max-width: 768px) {
+  .certified-installers-section {
+    background-color: #f3f6fc;
+    padding: 40px 40px 0 40px;
+  }
+  .certified-icon {
+    padding: 2rem;
+  }
+  .section-certified-installers-title {
+    font-size: 9vw;
+    margin-bottom: 48px;
+    color: #2f4858;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+  .section-certified-installers-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: start;
+  }
+  .logo-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .logo-box {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 30px 10px 30px 10px;
+    margin-bottom: 40px;
+  }
+  .logo-box img {
+    max-width: 100px; /* Taille des logos pour les écrans laptops */
+  }
+  .logo-text {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: start;
+    line-height: 30px;
+  }
+}
+
+/* Styles pour les tablettes (481px - 768px de largeur) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .certified-installers-section {
+    background-color: #f3f6fc;
+    padding: 40px 40px 0 40px;
+  }
+  .certified-icon {
+    padding: 2rem;
+  }
+  .section-certified-installers-title {
+    font-size: 48px;
+    color: #2f4858;
+    margin-bottom: 48px;
+  }
+  .section-certified-installers-text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 48px;
+    text-align: start;
+  }
+  .logo-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .logo-box {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 30px 10px 30px 10px;
+    margin-bottom: 40px;
+  }
+  .logo-box img {
+    max-width: 100px; /* Taille des logos pour les écrans laptops */
+  }
+  .logo-text {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: start;
+    line-height: 30px;
+  }
+}
+
+/* Styles pour les écrans laptops (supérieurs à 768px de largeur) */
+@media (min-width: 1025px) {
+  .certified-installers-section {
+    background-color: #f3f6fc;
+    padding: 3em;
+  }
+  .certified-icon {
+    padding: 2rem;
+  }
+  .section-certified-installers-title {
+    font-size: 48px;
+    color: #2f4858;
+    margin-bottom: 48px;
+  }
+  .section-certified-installers-text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 48px;
+    text-align: start;
+  }
+  .logo-grid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+  }
+  .logo-box {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 30px 10px 30px 10px;
+  }
+  .logo-box img {
+    max-width: 100px; /* Taille des logos pour les écrans laptops */
+  }
+  .logo-text {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: start;
+    line-height: 30px;
+  }
+}
+
+

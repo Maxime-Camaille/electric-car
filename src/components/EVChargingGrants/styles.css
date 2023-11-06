@@ -1,0 +1,213 @@
+@media (max-width: 768px){
+  .advenir-logo{
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 48px;
+}
+.charging-grants-illustration{
+  max-width: 70%;
+  height: auto;
+}
+.grants-button {
+  width: 300px;
+  font-size: 18px;
+  min-width: 130px;
+  height: auto;
+  color: #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline;
+  border-radius: 980px;
+  border: 2px solid #00ec99;
+  background: #00ec99;
+  font-family: Satoshi-Variable, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  order: 99;
+  margin:  auto;
+  
+}
+.grants-button:hover {
+  background: white;
+  color: #00ec99;
+  border: 2px solid #00ec99;
+  scale: 1.1;
+}
+.grants-section{
+    background-color: #FFFFFF;
+    padding: 48px 20px;
+}
+.grants-container{
+  display: flex;
+    align-items: center;
+    padding: 24px;
+    border-radius: 20px;
+  background-color: #C4FEE0;
+}
+.grants-left{
+  width: 100%;
+}
+.grants-right{
+  width: 0%;
+}
+.grants-title{
+  font-size: 9vw;
+    margin-bottom: 48px;
+    color: #2f4858;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
+}
+.grants-text{
+  font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: start;
+}
+}
+
+@media (min-width: 768px) and (max-width : 1024px){
+  .advenir-logo{
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 48px;
+}
+.charging-grants-illustration{
+  max-width: 70%;
+  height: auto;
+}
+.grants-button {
+  width: 300px;
+  font-size: 18px;
+  min-width: 130px;
+  height: auto;
+  color: #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline;
+  border-radius: 980px;
+  border: 2px solid #00ec99;
+  background: #00ec99;
+  font-family: Satoshi-Variable, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  order: 99;
+  margin:  auto;
+  
+}
+.grants-button:hover {
+  background: white;
+  color: #00ec99;
+  border: 2px solid #00ec99;
+  scale: 1.1;
+}
+.grants-section{
+    background-color: #FFFFFF;
+    padding: 40px;
+}
+.grants-container{
+  display: flex;
+    align-items: center;
+    padding: 3em;
+    border-radius: 20px;
+  background-color: #C4FEE0;
+}
+.grants-left{
+  width: 70%;
+}
+.grants-right{
+  width: 30%;
+  display: flex;
+  justify-content: end;
+}
+.grants-title{
+  font-size: 48px;
+    margin-bottom: 48px;
+    color: #2f4858;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
+}
+.grants-text{
+  font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 30px;
+    text-align: start;
+}
+}
+
+@media (min-width: 1024px){
+  .advenir-logo{
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 48px;
+}
+.charging-grants-illustration{
+  max-width: 70%;
+  height: auto;
+}
+.grants-button {
+  width: 300px;
+  font-size: 18px;
+  min-width: 130px;
+  height: auto;
+  color: #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline;
+  border-radius: 980px;
+  border: 2px solid #00ec99;
+  background: #00ec99;
+  font-family: Satoshi-Variable, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  order: 99;
+  margin:  auto;
+  
+}
+.grants-button:hover {
+  background: white;
+  color: #00ec99;
+  border: 2px solid #00ec99;
+  scale: 1.1;
+}
+.grants-section{
+    background-color: #FFFFFF;
+    padding: 100px 60px 100px 60px;
+}
+.grants-container{
+  display: flex;
+    align-items: center;
+    padding: 3em;
+    border-radius: 20px;
+  background-color: #C4FEE0;
+}
+.grants-left{
+  width: 70%;
+}
+.grants-right{
+  width: 30%;
+  display: flex;
+  justify-content: end;
+}
+.grants-title{
+  font-size: 48px;
+    margin-bottom: 48px;
+    color: #2f4858;
+    font-weight: 600;
+    letter-spacing: -1px;
+    text-align: center;
+}
+.grants-text{
+  font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 48px;
+    text-align: start;
+}
+}
