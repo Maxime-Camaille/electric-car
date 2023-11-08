@@ -2,7 +2,7 @@
 @media (max-width: 768px) {
   .certified-installers-section {
     background-color: #f3f6fc;
-    padding: 48px 20px;
+    padding: 48px 20px 20px 20px;
   }
   .certified-icon {
     padding: 2rem;
@@ -16,7 +16,7 @@
     text-align: center;
   }
   .section-certified-installers-text {
-    font-size: 3vw;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.8;
     margin-bottom: 30px;
