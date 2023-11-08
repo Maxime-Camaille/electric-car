@@ -1,16 +1,22 @@
 /* Styles pour mobile (max-width: 768px) */
 @media (max-width: 768px) {
   .footer {
-    background-color: #2F4858;
-    color: #889AA2;
+    background-color: #2f4858;
+    color: #889aa2;
+  }
+
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .footer-column {
-    text-align: center;
-    padding: 20px 0;
+    flex: 0 0 49%;
+    padding: 20px;
   }
 
-  .logo {
+  .footer-logo {
     font-size: 24px;
   }
 
@@ -20,11 +26,12 @@
 
   .copyright {
     font-size: 14px;
+    text-align: center;
   }
 
-  .section-title {
+  .footer-column-title {
     font-size: 20px;
-    color: #00ED99;
+    color: #00ed99;
   }
 
   .links-list {
@@ -35,21 +42,65 @@
   .footer-link {
     margin: 5px 0;
   }
+
+  .footer-column.newsletter {
+    flex-basis: 100%;
+  }
+
+  .newsletter-text {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .newsletter-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #00ed99;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  button {
+    background-color: #00ed99;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .unsubscribe-text {
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 0;
+  }
 }
 
 /* Styles pour tablette (@media (min-width: 768px) and (max-width: 1024px)) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .footer {
-    background-color: #2F4858;
-    color: #889AA2;
+    background-color: #2f4858;
+    color: #889aa2;
+  }
+
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
   }
 
   .footer-column {
-    text-align: center;
-    padding: 20px 0;
+    flex: 0 0 24%;
+    padding: 20px;
   }
 
-  .logo {
+  .footer-logo {
     font-size: 24px;
   }
 
@@ -59,11 +110,12 @@
 
   .copyright {
     font-size: 14px;
+    text-align: center;
   }
 
-  .section-title {
+  .footer-column-title {
     font-size: 20px;
-    color: #00ED99;
+    color: #00ed99;
   }
 
   .links-list {
@@ -79,11 +131,16 @@
 /* Styles pour desktop (min-width: 1024px) */
 @media (min-width: 1024px) {
   .footer {
-    background-color: #2F4858;
-    color: #889AA2;
+    background-color: #2f4858;
+    color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-columns {
+    display: flex;
   }
 
   .footer-column {
@@ -91,29 +148,73 @@
     padding: 20px;
   }
 
-  .logo {
-    font-size: 24px;
+  .footer-logo {
+    height: 34px;
   }
 
   .marketing-phrase {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
   }
 
   .copyright {
     font-size: 14px;
+    text-align: center;
   }
 
-  .section-title {
+  .footer-column-title {
     font-size: 20px;
-    color: #00ED99;
+    text-transform: uppercase;
+    text-align: start;
+    color: #00ed99;
   }
 
   .links-list {
     list-style: none;
     padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+    line-height: 30px;
   }
 
   .footer-link {
     margin: 5px 0;
+  }
+
+  .newsletter-text {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .newsletter-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #00ed99;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  button {
+    background-color: #00ed99;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .unsubscribe-text {
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 0;
   }
 }
