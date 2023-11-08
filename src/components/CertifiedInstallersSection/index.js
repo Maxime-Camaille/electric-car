@@ -43,7 +43,7 @@ const EVChargingGrants = () => {
           </div>
           <div className='logo-box'>
             <img src={qualifelec} alt='Logo-qualifelec' />
-            <p className='logo-text'>En choisissant une entreprise qualifiée Qualifelec pour l’installation de bornes de recharges de véhicules électriques, vous êtes assuré que votre installateur est correctement formé, compétent et expérimenté</p>
+            <p className='logo-text'>En choisissant une entreprise qualifiée Qualifelec pour l’installation de bornes de recharges de véhicules électriques, vous êtes assuré que votre installateur est correctement formé, compétent et expérimenté.</p>
           </div>
         </div>
       </div>
