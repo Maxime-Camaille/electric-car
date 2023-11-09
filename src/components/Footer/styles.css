@@ -141,19 +141,23 @@
 
   .footer-columns {
     display: flex;
+    padding: 3rem 60px 30px 60px;
+    border-bottom: 1px solid #00ed99;
   }
 
   .footer-column {
     flex: 1;
-    padding: 20px;
   }
-
+  .footer-column-copyright {
+    margin-bottom: 1rem;
+    padding-top: 30px;
+  }
   .footer-logo {
-    height: 34px;
+    height: 24px;
   }
 
   .marketing-phrase {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: white;
   }
@@ -161,6 +165,7 @@
   .copyright {
     font-size: 14px;
     text-align: center;
+    padding-bottom: 1rem;
   }
 
   .footer-column-title {
@@ -186,27 +191,29 @@
   .newsletter-text {
     font-size: 16px;
     margin: 10px 0;
+    text-align: start;
   }
 
   .newsletter-subscribe {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    width: 80%;
   }
 
   input[type="email"] {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    border: 2px solid #00ed99;
-    border-radius: 5px;
+    border: 1px solid #00ed99;
     font-size: 16px;
   }
-
-  button {
+  .footer-column.newsletter {
+    flex-basis: 6%;
+  }
+  .subscribe-newsletter-button {
     background-color: #00ed99;
     color: white;
-    padding: 10px 20px;
+    padding: 9.6px 20px;
     border: none;
     cursor: pointer;
     font-size: 18px;
@@ -214,7 +221,10 @@
 
   .unsubscribe-text {
     font-size: 12px;
-    text-align: center;
-    margin: 10px 0;
+    text-align: start;
+    width: 80%;
+  }
+  .unsubscribe-text a {
+    font-weight: 700;
   }
 }
