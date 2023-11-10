@@ -7,7 +7,6 @@
     flex-direction: column-reverse;
     padding-top: 2rem;
     max-width: calc(76.5rem);
-    width: calc(100% - 1.5rem);
   }
 
   .footer-columns {
@@ -116,7 +115,7 @@
   .subscribe-newsletter-button:hover {
     color: #2f4858;
   }
-  
+
   .unsubscribe-text {
     font-size: 12px;
     text-align: center;
@@ -136,7 +135,6 @@
     flex-direction: column-reverse;
     padding-top: 2rem;
     max-width: calc(76.5rem);
-    width: calc(100% - 1.5rem);
   }
 
   .footer-columns {
