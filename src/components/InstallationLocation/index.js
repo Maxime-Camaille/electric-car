@@ -25,7 +25,6 @@ const InstallationLocation = () => {
               <h4>Maison</h4>
             </div>
           </div>
-
           <div className='grid-item'>
             <img src={travail} alt='travail' />
             <div className='text-item'>
