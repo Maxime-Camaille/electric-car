@@ -81,7 +81,16 @@ function Footer() {
         </div>
       </div>
       <div className='footer-column-copyright'>
-          <img src={LogoFooter} alt='Logo Bornstall' className='footer-logo' />
+      <Link
+          to='/'
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          className='logo'
+        >
+          <img src={LogoFooter} alt='logo-of-the-website' className='footer-logo' />
+        </Link>
           <p className='marketing-phrase'>
             L'avenir électrique pour un monde en mouvement
           </p>
