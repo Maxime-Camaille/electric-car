@@ -1,0 +1,115 @@
+/* BlogSection.css */
+
+/* Styles par défaut */
+
+.blog-section {
+  background-color: #f3f6fc;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-title {
+  color: #2f4858;
+}
+
+.highlight-text {
+  color: #00ed99;
+}
+
+.articles-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.article {
+  width: 30%;
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.date {
+  color: #00ed99;
+}
+
+.article-title {
+  color: #2f4858;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.article-summary {
+  color: #2f4858;
+  font-weight: 500;
+}
+
+/* Ajout pour l'icône d'horloge et le temps de lecture */
+
+.article-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: #e0e0e0;
+}
+
+.clock-icon {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.read-time {
+  font-size: 14px;
+}
+
+/* Style du bouton "Voir plus d'articles" */
+
+.view-more-button {
+  background-color: #00ec99;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Styles pour tablette (par exemple, jusqu'à 768px) */
+
+@media screen and (max-width: 768px) {
+  .article {
+    width: 48%;
+  }
+
+  .articles-container {
+    flex-direction: column;
+  }
+}
+
+/* Styles pour mobile (par exemple, jusqu'à 480px) */
+
+@media screen and (max-width: 480px) {
+  .article {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .articles-container {
+    flex-direction: column;
+  }
+}

@@ -8,6 +8,7 @@ import EVChargingTime from "../EVChargingTime";
 import EVChargingGrants from "../EVChargingGrants";
 import CertifiedInstallersSection from "../CertifiedInstallersSection";
 import Footer from "../Footer";
+import BlogSection from "../BlogSection";
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
       <EVChargingTime/>
       <EVChargingGrants />
       <CertifiedInstallersSection/>
+      <BlogSection />
       <Footer />
     </>
   );
