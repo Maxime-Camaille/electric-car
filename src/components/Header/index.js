@@ -5,14 +5,26 @@ import { Link } from "react-router-dom";
 
 function Header() {
   const [showLinks, setShowLinks] = useState(false);
+  const [navBar, setNavBar] = useState(false);
 
   const handleShowLinks = () => {
     setShowLinks(!showLinks);
   };
 
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setNavBar(true);
+    } else {
+      setNavBar(false);
+    }
+  };
+  
+
+  window.addEventListener("scroll", changeBackground);
+
   return (
     <header className='header'>
-      <nav className='NavBar'>
+      <nav className={navBar ? "NavBar active" : "NavBar"}>
         <Link
           to='/'
           spy={true}

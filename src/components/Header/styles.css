@@ -3,8 +3,8 @@ header {
   font-weight: 600;
   line-height: 17px;
 }
-nav {
-  height: 6rem;
+.NavBar {
+  height: 5rem;
   width: 100vw;
   display: flex;
   justify-content: space-around;
@@ -14,6 +14,11 @@ nav {
   margin: auto;
   background-color: rgba(0, 0, 0, 0);
   backdrop-filter: blur(24px);
+  transition: background-color 1s;
+}
+.NavBar.active{
+  background-color: #2f4858;
+  color: #fff;
 }
 .Link {
   cursor: pointer;
@@ -58,7 +63,6 @@ nav {
   position: relative;
   transition: cubic-bezier(0.17, 0.17, 0.41, 1);
   padding: 10px;
-  color: white;
 }
 .nav-links li :after {
   content: "";
@@ -115,7 +119,7 @@ nav {
 /*Responsive Adding Media Queries*/
 
 @media screen and (max-width: 768px) {
-  nav {
+  .NavBar {
     position: fixed;
     z-index: 3;
     justify-content: flex-start;
