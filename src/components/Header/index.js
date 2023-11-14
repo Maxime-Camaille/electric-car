@@ -27,10 +27,6 @@ function Header() {
       <nav className={navBar ? "NavBar active" : "NavBar"}>
         <Link
           to='/'
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
           className='logo'
         >
           <img decoding='async' src={Logo} alt='logo-of-the-website' />
@@ -50,7 +46,7 @@ function Header() {
             </Link>
           </li>
           <li className={`${showLinks ? "fade" : ""}`}>
-            <Link to='about' onClick={handleShowLinks}>
+            <Link to='/services' onClick={handleShowLinks}>
               Nos Services
             </Link>
           </li>
