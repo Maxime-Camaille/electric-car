@@ -55,7 +55,12 @@ header {
   list-style: none;
   font-size: 1rem;
 }
-
+.nav-links a {
+  color: #fff;
+}
+.nav-links a:visited {
+  color: #fff;
+}
 .nav-links li {
   margin: 0 0.7vw;
   text-decoration: none;

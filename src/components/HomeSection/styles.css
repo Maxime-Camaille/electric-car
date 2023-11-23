@@ -22,8 +22,8 @@
 }
 
 .greenButton:hover {
-  background: #ffffff00;
-  color: #fff;
+  background-color: #fff;
+  color: #00ec99;
   border: 2px solid #fff;
   scale: 1.1;
 }

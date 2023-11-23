@@ -1,0 +1,109 @@
+/* Styles communs pour toutes les tailles d'écran */
+.chargingService-card {
+  padding: 100px 60px 100px 60px;
+}
+.chargingService-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.chargingService-card__wrapper.text-left {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #f4f7fe;
+  border-radius: 20px;
+}
+.chargingService-card__wrapper.text-right {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  background-color: #f4f7fe;
+  border-radius: 20px;
+}
+.chargingService-card-label {
+  background-color: #c4fee0;
+  color: #07eb99;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.chargingService-card-title {
+  font-size: 48px;
+  text-align: start;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 48px;
+}
+
+.chargingService-card-title-part1 {
+  color: #2f4858;
+}
+.chargingService-card-title-part2 {
+  color: #07eb99;
+}
+
+.chargingService-card-description {
+  color: #2f4858;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: start;
+  line-height: 36px;
+}
+
+.chargingService-card-image {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+/* Styles pour la version mobile (max-width: 767.98px) */
+@media screen and (max-width: 767.98px) {
+  .chargingService-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .chargingService-card-label,
+  .chargingService-card-title,
+  .chargingService-card-description {
+    text-align: center;
+  }
+
+  .chargingService-card-label,
+  .chargingService-card-title-part1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* Styles pour la version tablette (min-width: 768px et max-width: 991.98px) */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .chargingService-card {
+    /* Ajoute ici les styles spécifiques à la tablette si nécessaire */
+    padding: 15px;
+  }
+
+  .chargingService-card-label {
+    font-size: 0.9em;
+  }
+
+  .chargingService-card-title {
+    font-size: 1.2em;
+  }
+
+  .chargingService-card-description {
+    font-size: 0.9em;
+  }
+}
+
+/* Styles pour la version laptop (min-width: 992px) */
+@media screen and (min-width: 992px) {
+  .chargingService-card-text {
+    padding: 40px;
+    width: 60%;
+  }
+}

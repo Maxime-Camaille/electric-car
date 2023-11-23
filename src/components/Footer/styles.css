@@ -1,3 +1,10 @@
+.links-list a{
+  color: #fff;
+}
+.unsubscribe-text a {
+  color: #fff;
+  font-weight: bold;
+}
 /* Styles pour mobile (max-width: 768px) */
 @media (max-width: 768px) {
   .footer {

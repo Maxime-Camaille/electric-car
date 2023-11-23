@@ -22,7 +22,7 @@ const ServiceProcess = () => {
             </h6>
             <p className='paragraph-content'>
               Remplissez simplement notre formulaire de contact, et notre équipe
-              vous rappellera rapidement. Nous serons à votre disposition pour
+              vous contactera rapidement. Nous serons à votre disposition pour
               répondre à toutes vos questions.
             </p>
           </div>
