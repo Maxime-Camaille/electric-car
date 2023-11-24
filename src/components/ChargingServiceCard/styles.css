@@ -86,22 +86,7 @@
 
 /* Styles pour la version tablette (min-width: 768px et max-width: 991.98px) */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
-  .chargingService-card {
-    /* Ajoute ici les styles spécifiques à la tablette si nécessaire */
-    padding: 15px;
-  }
 
-  .chargingService-card-label {
-    font-size: 0.9em;
-  }
-
-  .chargingService-card-title {
-    font-size: 1.2em;
-  }
-
-  .chargingService-card-description {
-    font-size: 0.9em;
-  }
 }
 
 /* Styles pour la version laptop (min-width: 992px) */

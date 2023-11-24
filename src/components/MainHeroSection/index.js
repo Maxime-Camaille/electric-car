@@ -19,7 +19,8 @@ function MainHeroSection({
       />
       <div className='main-hero-content'>
         <h1 className='main-hero-title'>
-          <span className='white-text'>{whiteTitle}</span>{" "}
+          <span className='white-text'>{whiteTitle}</span>
+          <br />
           <span className='green-text'>{greenTitle}</span>
         </h1>
         <p className='main-hero-description'>{description}</p>
