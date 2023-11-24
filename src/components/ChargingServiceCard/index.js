@@ -22,7 +22,7 @@ const ChargingServiceCard = ({
         <div
           className="chargingService-card-text"
         >
-          <div className='chargingService-card-label'>{category}</div>
+          <div className={`chargingService-card-label ${isTextOnLeft ? "green" : "blue"}`}>{category}</div>
           <div className='chargingService-card-title'>
             <span className='chargingService-card-title-part1'>
               Je souhaite installer une
@@ -40,7 +40,9 @@ const ChargingServiceCard = ({
           <img
             src={imageSrc}
             alt='borne-Service-description'
-            className='chargingService-card-image'
+            className={`chargingService-card-image ${
+              isTextOnLeft ? "on-right" : "on-left"
+            }`}
           />
         </div>
 
