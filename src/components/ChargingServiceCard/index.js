@@ -1,10 +1,6 @@
 import React from "react";
 import "./styles.css";
-{
-  /*
-import installateur from "../../assets/images/Installateur.png";
-*/
-}
+
 const ChargingServiceCard = ({
   category,
   title,
