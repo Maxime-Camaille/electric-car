@@ -1,7 +1,6 @@
 import "./styles.css";
 import Header from "../../components/Header";
 import MainHeroSection from "../../components/MainHeroSection";
-import ClientCarousel from "../../components/ClientCarousel";
 import ChargingServiceCard from "../../components/ChargingServiceCard";
 import Footer from "../../components/Footer";
 import BlogSection from "../../components/BlogSection";
@@ -10,7 +9,6 @@ import illustrationCopropriété from "../../assets/images/hommes-discutant-en c
 import illustrationEntreprise from "../../assets/images/deux-voitures-electriques-charge-station-entreprise.jpg";
 
 function ServicesOverviewPage() {
-
   const mainHeroSectionProps = {
     whiteTitle: "Réinventez votre quotidien :",
     greenTitle: "rechargez facilement.",
@@ -58,8 +56,7 @@ function ServicesOverviewPage() {
       <ChargingServiceCard {...serviceCardProps1} />
       <ChargingServiceCard {...serviceCardProps2} />
       <ChargingServiceCard {...serviceCardProps3} />
-      <BlogSection/>
-      <ClientCarousel />
+      <BlogSection />
       <Footer />
     </>
   );
