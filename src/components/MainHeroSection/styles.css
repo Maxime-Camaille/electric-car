@@ -84,7 +84,7 @@
     margin-bottom: 9vw;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023.8px) {
+@media (min-width: 768px) and (max-width: 1023.8px) {
   .main-hero-title {
     color: #fff;
     font-size: 3.75rem;
