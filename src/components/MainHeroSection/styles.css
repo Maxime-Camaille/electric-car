@@ -100,7 +100,19 @@
   }
 }
 @media (min-width: 1024px) {
-
+  .main-hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 130px 2vw 0px 2vw;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .main-hero-title {
     color: #fff;
     font-size: 85px;
