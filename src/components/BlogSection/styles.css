@@ -122,6 +122,14 @@
     border-radius: 8px;
     margin-bottom: 10px;
   }
+
+  .blog-title {
+    width: 80%;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin: auto;
+  }
 }
 
 /* Styles pour mobile (par exemple, jusqu'à 480px) */
