@@ -9,38 +9,6 @@
   justify-content: center;
   align-items: flex-start;
 }
-.chargingService-card__wrapper.text-left {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  background-color: #fff;
-  border-radius: 20px;
-}
-.chargingService-card__wrapper.text-right {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-start;
-  background-color: #c4fee0;
-  border-radius: 20px;
-}
-.chargingService-card-label.green {
-  background-color: #c4fee0;
-  color: #07eb99;
-  padding: 8px 20px;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.chargingService-card-label.blue {
-  background-color: #2f4858;
-  color: #07eb99;
-  padding: 8px 20px;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
 .chargingService-card-title {
   font-size: 48px;
   text-align: start;
@@ -67,30 +35,129 @@
 /* Styles pour la version mobile (max-width: 767.98px) */
 @media screen and (max-width: 767.98px) {
   .chargingService-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding: 48px 20px;
+    margin-bottom: 48px;
+    position: relative;
   }
-
-  .chargingService-card-label,
-  .chargingService-card-title,
+  .chargingService-card-text {
+    padding: 48px 20px 48px 20px;
+  }
+  .chargingService-card__wrapper.text-left {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #f3f6fc;
+    border-radius: 20px;
+  }
+  .chargingService-card__wrapper.text-right {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #c4fee0;
+    border-radius: 20px;
+  }
+  .chargingService-card-title {
+    font-size: 9vw;
+    text-align: start;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+  }
+  .chargingService-card-title br {
+    display: none;
+  }
   .chargingService-card-description {
-    text-align: center;
+    color: #2f4858;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: start;
+    line-height: 1.8;
+  }
+  .chargingService-card-image-container {
+    width: 100%;
+    height: 100vw;
+  }
+  .chargingService-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .chargingService-card-label.green {
+    background-color: #c4fee0;
+    color: #07eb99;
+    padding: 8px 20px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 4vw;
+    position: absolute;
+    top: 48px;
+    left: 20px;
+    border-top-left-radius: 20px;
   }
 
-  .chargingService-card-label,
-  .chargingService-card-title-part1 {
-    margin-bottom: 10px;
+  .chargingService-card-label.blue {
+    background-color: #2f4858;
+    color: #07eb99;
+    padding: 8px 20px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 4vw;
+    position: absolute;
+    top: 48px;
+    left: 20px;
+    border-top-left-radius: 20px;
   }
 }
 
-/* Styles pour la version tablette (min-width: 768px et max-width: 991.98px) */
-@media screen and (min-width: 768px) and (max-width: 991.98px) {
+/* Styles pour la version tablette */
+@media screen and (min-width: 768px) and (max-width: 1023.9px) {
+  .chargingService-card-text {
+    padding: 2rem;
+  }
+  .chargingService-card__wrapper.text-left {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #f3f6fc;
+    border-radius: 20px;
+  }
+  .chargingService-card__wrapper.text-right {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #c4fee0;
+    border-radius: 20px;
+  }
+  .chargingService-card-image-container {
+    width: 100%;
+    height: calc(75vw - 120px);
+  }
+  .chargingService-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .chargingService-card-label.green {
+    background-color: #c4fee0;
+    color: #07eb99;
+    padding: 8px 20px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
 
+  .chargingService-card-label.blue {
+    background-color: #2f4858;
+    color: #07eb99;
+    padding: 8px 20px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
 }
 
 /* Styles pour la version laptop (min-width: 992px) */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .chargingService-card-text {
     padding: 40px;
     width: 60%;
@@ -110,6 +177,20 @@
     left: 0;
     position: absolute;
   }
+  .chargingService-card__wrapper.text-left {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  .chargingService-card__wrapper.text-right {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    background-color: #c4fee0;
+    border-radius: 20px;
+  }
   .chargingService-card-image.on-left {
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
@@ -117,5 +198,22 @@
   .chargingService-card-image.on-right {
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
+  }
+  .chargingService-card-label.green {
+    background-color: #c4fee0;
+    color: #07eb99;
+    padding: 8px 20px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .chargingService-card-label.blue {
+    background-color: #2f4858;
+    color: #07eb99;
+    padding: 8px 20px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-weight: 600;
   }
 }

@@ -21,7 +21,7 @@ function ServicesOverviewPage() {
 
   const serviceCardProps1 = {
     category: "Pour les particuliers",
-    title: "borne à mon domicile",
+    title: " borne à mon domicile",
     description:
       "Investir dans une borne électrique pour votre domicile va au-delà de la simple commodité. Vous bénéficiez d'une recharge rapide et efficace directement chez vous, éliminant les tracas liés aux stations de recharge publiques.",
     ctaMessage: "Installez votre borne",
@@ -31,7 +31,7 @@ function ServicesOverviewPage() {
 
   const serviceCardProps2 = {
     category: "Pour les copropriétés",
-    title: "borne en copropriété",
+    title: " borne en copropriété",
     description:
       "Offrez à vos résidents le confort de la recharge électrique à domicile. Transformez votre copropriété en un lieu de vie moderne et durable. Nos solutions d'installation de bornes électriques sont conçues pour s'intégrer parfaitement à votre espace.",
     ctaMessage: "Je demande mon devis",
@@ -41,7 +41,7 @@ function ServicesOverviewPage() {
 
   const serviceCardProps3 = {
     category: "Pour les professionnels",
-    title: "borne en entreprise",
+    title: " borne en entreprise",
     description:
       "Facilitez la transition de votre flotte automobile vers l'électrique. Nos experts travaillent avec vous pour concevoir une infrastructure de recharge adaptée à vos besoins spécifiques, offrant une solution pratique pour vos employés et illustrant votre engagement envers les solutions novatrices.",
     ctaMessage: "Nous contacter maintenant",
