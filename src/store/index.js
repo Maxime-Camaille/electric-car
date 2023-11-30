@@ -1,13 +1,10 @@
-import { createStore, applyMiddleware, compose } from 'redux';
-import blogMiddleware from '../middleware/blogMiddleware';
-import reducer from '../reducers';
+import { createStore, applyMiddleware, compose } from "redux";
+import reducer from "../reducers";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const enhancers = composeEnhancers(
-  applyMiddleware(
-    blogMiddleware,
-  ),
+  applyMiddleware(/* middleware si nécessaire */)
 );
 
 const store = createStore(reducer, enhancers);

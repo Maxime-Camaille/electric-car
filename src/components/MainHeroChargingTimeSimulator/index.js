@@ -1,9 +1,9 @@
 import "./styles.css";
 import React from "react";
 import { Link } from "react-router-dom";
-import srcImageMainHeroSection from "../../assets/images/femme-rechargeant-sa-voiture-electrique.jpg";
+import srcImageMainHeroChargingTimeSimulator from "../../assets/images/voiture-electrique-station-charge-nature.jpg";
 
-function MainHeroSection({
+function MainHeroChargingTimeSimulator({
   whiteTitle,
   greenTitle,
   description,
@@ -13,7 +13,7 @@ function MainHeroSection({
   return (
     <section className='main-hero-section'>
       <img
-        src={srcImageMainHeroSection}
+        src={srcImageMainHeroChargingTimeSimulator}
         alt='background-main-hero-banner'
         className='main-hero-background-image'
       />
@@ -33,4 +33,4 @@ function MainHeroSection({
   );
 }
 
-export default MainHeroSection;
+export default MainHeroChargingTimeSimulator;

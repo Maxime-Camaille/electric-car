@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import blogReducer from './blog';
+import ChargingTimeSimulator from './ChargingTimeSimulator';
 
 const rootReducer = combineReducers({
-  blog: blogReducer,
+  ChargingTimeSimulator,
 });
 
 export default rootReducer;

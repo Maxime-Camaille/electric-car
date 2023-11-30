@@ -61,7 +61,7 @@ function Header() {
             </Link>
           </li>
           <li className={`${showLinks ? "fade" : ""}`}>
-            <Link to='cv' onClick={handleShowLinks}>
+            <Link to='/temps-de-recharge-voiture-electrique' onClick={handleShowLinks}>
               FAQ
             </Link>
           </li>
