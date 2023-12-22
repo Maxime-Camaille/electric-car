@@ -11,7 +11,7 @@ function MainHeroChargingTimeSimulator({
   ctaLink,
 }) {
   return (
-    <section className='main-hero-section'>
+    <section className='main-hero-section-ChargingTimeSimulator'>
       <img
         src={srcImageMainHeroChargingTimeSimulator}
         alt='background-main-hero-banner'
@@ -28,7 +28,6 @@ function MainHeroChargingTimeSimulator({
           {ctaText}
         </Link>
       </div>
-      <div class='icon-scroll'></div>
     </section>
   );
 }

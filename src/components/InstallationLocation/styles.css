@@ -10,7 +10,7 @@
     z-index: 1;
   }
   .installationLocation__container {
-    background: #2f4858;
+    background: #05204A;
     border-radius: 20px;
     position: relative;
     overflow: visible;
@@ -120,7 +120,7 @@
     letter-spacing: -1px;
   }
   .installationLocation__container {
-    background: #2f4858;
+    background: #05204A;
     overflow: visible;
     border-radius: 0;
     padding-bottom: 1px;

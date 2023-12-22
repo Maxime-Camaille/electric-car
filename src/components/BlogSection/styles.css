@@ -12,7 +12,7 @@
 }
 
 .blog-title {
-  color: #2f4858;
+  color: #05204a;
   font-size: 48px;
   margin-bottom: 48px;
 }
@@ -52,13 +52,13 @@
 }
 
 .article-title {
-  color: #2f4858;
+  color: #05204A;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .article-summary {
-  color: #2f4858;
+  color: #05204A;
   font-weight: 500;
 }
 
@@ -71,14 +71,14 @@
 
 .clock-icon {
   height: 12px;
-  color: #e7e7e7;
+  color: #C0C4C7;
   margin-right: 5px;
   margin-top: 1px;
 }
 
 .read-time {
   font-size: 14px;
-  color: #e7e7e7;
+  color: #C0C4C7;
 }
 
 .view-more-button {

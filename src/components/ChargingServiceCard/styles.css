@@ -18,14 +18,14 @@
 }
 
 .chargingService-card-title-part1 {
-  color: #2f4858;
+  color: #05204A;
 }
 .chargingService-card-title-part2 {
   color: #07eb99;
 }
 
 .chargingService-card-description {
-  color: #2f4858;
+  color: #05204A;
   font-size: 18px;
   font-weight: 500;
   text-align: start;
@@ -65,7 +65,7 @@
     display: none;
   }
   .chargingService-card-description {
-    color: #2f4858;
+    color: #05204A;
     font-size: 18px;
     font-weight: 500;
     text-align: start;
@@ -96,7 +96,7 @@
   }
 
   .chargingService-card-label.blue {
-    background-color: #2f4858;
+    background-color: #05204A;
     color: #07eb99;
     padding: 8px 20px;
     margin-bottom: 1rem;
@@ -147,7 +147,7 @@
   }
 
   .chargingService-card-label.blue {
-    background-color: #2f4858;
+    background-color: #05204A;
     color: #07eb99;
     padding: 8px 20px;
     border-radius: 8px;
@@ -209,7 +209,7 @@
   }
 
   .chargingService-card-label.blue {
-    background-color: #2f4858;
+    background-color: #05204A;
     color: #07eb99;
     padding: 8px 20px;
     border-radius: 8px;

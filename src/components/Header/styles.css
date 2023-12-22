@@ -17,7 +17,7 @@ header {
   transition: background-color 1s;
 }
 .NavBar.active{
-  background-color: #2f4858;
+  background-color: #05204A;
   color: #fff;
 }
 .Link {
@@ -157,15 +157,18 @@ header {
     font-size: 32px;
     line-height: 40px;
   }
+  .nav-links a:visited {
+    color: #05204A;
+  }
   .nav-links.open {
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
+    clip-path: circle(1500px at 90% -10%);
+    -webkit-clip-path: circle(1500px at 90% -10%);
     pointer-events: all;
   }
 
   .nav-links li {
     opacity: 0;
-    color: #2f4858;
+    color: #05204A;
   }
   .nav-links li:nth-child(1) {
     transition: all 0.5s ease 0.2s;
@@ -195,7 +198,7 @@ header {
     opacity: 1;
   }
   li.fade a {
-    color: #2f4858;
+    color: #05204A;
   }
   /* Navigation Bar Icon on Click*/
 

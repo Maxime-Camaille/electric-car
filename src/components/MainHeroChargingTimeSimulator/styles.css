@@ -24,12 +24,11 @@
   scale: 1.1;
 }
 /* END Styling Button*/
-.main-hero-section {
+.main-hero-section-ChargingTimeSimulator {
   width: 100%;
   height: 100vh;
   position: relative;
   overflow: hidden;
-  margin-bottom: 100px;
 }
 .main-hero-content {
   position: absolute;

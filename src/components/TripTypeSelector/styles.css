@@ -1,1 +1,196 @@
+.trip-type-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.labels-container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%; /* Ajuste la largeur du slider selon tes préférences */
+  margin: 2rem 2rem 1rem 2rem;
+  position: relative;
+}
+
+.labels-container::before {
+  border: 0.1125rem solid #dae1f5;
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  left: -40%;
+  transform: translateX(50%);
+  background-color: #dae1f5;
+  margin-top: -1rem;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.trip-type-selector label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.trip-type-selector img {
+  width: 100px;
+  height: 100px;
+  margin-top: 2rem;
+  border-radius: 50%;
+}
+.trip-type-selector-title {
+  font-size: 30px;
+  text-align: start;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #05204a;
+  text-align: center;
+  margin: 2rem 2rem 0.5rem 2rem;
+}
+/* Le reste du style reste inchangé */
+.radio-contain {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+}
+.radio-input {
+  position: absolute;
+  height: 1.25rem;
+  width: 1.25rem;
+  background: rgb(255, 255, 255);
+  transition: background 250ms;
+  border: 4px solid #00ec99;
+  border-radius: 10rem;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  transition: 0.4s ease-in-out 0s;
+}
+.radio-input.checked {
+  background: #00ec99; /* Fond vert pour la case cochée */
+  border-color: #00ec99;
+  box-shadow: 0px 0px 10px 5px rgba(0, 236, 153, 0.507);
+}
+.radio-input.checked::after {
+  animation: click-wave 0.65s;
+  background: #40e0d0;
+  content: "";
+  display: block;
+  position: relative;
+  z-index: 100;
+  border-radius: 50%;
+}
+@-webkit-keyframes click-wave {
+  0% {
+    width: 10px;
+    height: 10px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    width: 40px;
+    height: 40px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+@-moz-keyframes click-wave {
+  0% {
+    width: 40px;
+    height: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+@-o-keyframes click-wave {
+  0% {
+    width: 40px;
+    height: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+@keyframes click-wave {
+  0% {
+    width: 40px;
+    height: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+    opacity: 0;
+  }
+}
+.kilometerRange-title {
+  font-size: 30px;
+  text-align: start;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #05204a;
+  text-align: center;
+  margin: 1rem 2rem;
+}
+.kilometerRange-wrapper {
+  width: 70%;
+  margin: auto;
+  padding: 15px 30px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), #edf1f4);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 20px #fff;
+  border-radius: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.kilometerRange-cursor {
+  width: 500px; /* Specific width is required for Firefox. */
+  height: 15px;
+  appearance: none;
+  background: #edf1f4;
+  outline: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff,
+    inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.kilometerRange-cursor::-webkit-slider-thumb {
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #00ec99;
+  box-shadow: -407px 0 0 400px #00ec99;
+}
+.dailyKilometer {
+  position: relative;
+  text-align: center;
+  width: 180px;
+  font-size: 1.25em;
+  color: #fff;
+  background: #00ec99;
+  margin-left: 15px;
+  padding: 0.2em 0.2em;
+  border-radius: 25px;
+  font-weight: 500;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff,
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 5px rgba(255, 255, 255, 0.25);
+}

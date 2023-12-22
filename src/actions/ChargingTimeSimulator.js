@@ -4,6 +4,7 @@ export const SET_TRIP_TYPE = "SET_TRIP_TYPE";
 export const SET_DAILY_KILOMETER = "SET_DAILY_KILOMETER";
 export const SET_CHARGING_POWER = "SET_CHARGING_POWER";
 export const SET_CHARGING_TIME = "SET_CHARGING_TIME";
+export const SET_CURRENT_STEP = "SET_CURRENT_STEP";
 // ... (autres types d'actions)
 
 // Action creators adaptés au modèle du reducer
@@ -45,5 +46,13 @@ export function actionSetChargingTime(chargingTime) {
   return {
     type: SET_CHARGING_TIME,
     payload: chargingTime,
+  };
+}
+
+// Action creator pour mettre à jour l'étape actuelle
+export function actionSetCurrentStep(currentStep) {
+  return {
+    type: SET_CURRENT_STEP,
+    payload: currentStep,
   };
 }

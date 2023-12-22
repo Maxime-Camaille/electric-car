@@ -2,7 +2,7 @@
 @media (max-width: 768px) {
   .charging-time-section {
     flex-direction: column; /* Diviser en colonne pour la version mobile */
-    background-color: #2f4858;
+    background-color: #05204A;
     color: white;
     padding: 48px 20px;
     display: flex;
@@ -80,7 +80,7 @@
 @media (min-width: 768px) and (max-width : 1024px){
   .charging-time-section {
     flex-direction: column; /* Diviser en colonne pour la version mobile */
-    background-color: #2f4858;
+    background-color: #05204A;
     color: white;
     padding: 48px 20px;
     display: flex;
@@ -162,7 +162,7 @@
     display: flex;
   }
   .charging-time-section {
-    background-color: #2f4858;
+    background-color: #05204A;
     color: white;
     padding: 48px 20px;
     display: flex;

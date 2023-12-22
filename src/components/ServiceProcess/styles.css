@@ -57,7 +57,7 @@
 .service-process__title {
   font-size: 48px;
   margin-bottom: 60px;
-  color: #2f4858;
+  color: #05204A;
   font-weight: 600;
   letter-spacing: -1px;
   text-align: start;
@@ -84,6 +84,7 @@
   font-weight: 500;
   text-align: start;
   line-height: 40px;
+  color: #05204A;
 }
 
 /* Media Queries */

@@ -8,7 +8,7 @@
 /* Styles pour mobile (max-width: 768px) */
 @media (max-width: 768px) {
   .footer {
-    background-color: #2f4858;
+    background-color: #05204A;
     color: white;
     display: flex;
     flex-direction: column-reverse;
@@ -136,7 +136,7 @@
 /* Styles pour tablette (@media (min-width: 768px) and (max-width: 1024px)) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .footer {
-    background-color: #2f4858;
+    background-color: #05204A;
     color: white;
     display: flex;
     flex-direction: column-reverse;
@@ -265,7 +265,7 @@
 /* Styles pour desktop (min-width: 1024px) */
 @media (min-width: 1025px) {
   .footer {
-    background-color: #2f4858;
+    background-color: #05204A;
     color: white;
     display: flex;
     justify-content: space-around;

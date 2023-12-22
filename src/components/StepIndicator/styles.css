@@ -1,0 +1,80 @@
+/* StepIndicator.css */
+
+.step-indicator {
+    border-radius: 10px;
+    display: flex;
+    padding: 20px 10px;
+    position: relative;
+    z-index: 10;
+    list-style-type: none;
+    margin-top: 6rem;
+  }
+  
+  .step {
+    padding: 0 20px;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 170px;
+    position: relative;
+    color: #333;
+  }
+  
+  .step + .step .step-line {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 19px;
+    width: 100%;
+    height: 2px;
+    transform: translateX(-50%);
+    z-index: -10;
+  }
+  
+  .step-circle {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 600;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    color: transparent;
+  }
+  
+  .step-circle.active {
+    background-color: #07eb99;
+    color: #fff;
+  }
+  
+  .step-circle.active .step-check,
+  .step-circle.active .step-number {
+    display: block;
+  }
+  
+  .step-circle .step-check,
+  .step-circle .step-number {
+    display: none;
+  }
+  
+  .step-check {
+    font-size: 20px;
+  }
+  
+  .step-number {
+    font-size: 18px;
+  }
+  
+  .step-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  

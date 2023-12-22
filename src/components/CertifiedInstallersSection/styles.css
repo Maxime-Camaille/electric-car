@@ -10,12 +10,13 @@
   .section-certified-installers-title {
     font-size: 9vw;
     margin-bottom: 48px;
-    color: #2f4858;
+    color: #05204A;
     font-weight: 600;
     letter-spacing: -1px;
     text-align: center;
   }
   .section-certified-installers-text {
+    color: #05204A;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.8;
@@ -38,8 +39,6 @@
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     padding: 30px 10px 30px 10px;
@@ -49,6 +48,7 @@
     max-width: 100px; /* Taille des logos pour les écrans laptops */
   }
   .logo-text {
+    color: #05204A;
     font-size: 16px;
     font-weight: 500;
     text-align: start;
@@ -67,10 +67,11 @@
   }
   .section-certified-installers-title {
     font-size: 48px;
-    color: #2f4858;
+    color: #05204A;
     margin-bottom: 48px;
   }
   .section-certified-installers-text {
+    color: #05204A;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
@@ -93,8 +94,6 @@
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     padding: 30px;
@@ -104,6 +103,7 @@
     max-width: 200px; /* Taille des logos pour les écrans laptops */
   }
   .logo-text {
+    color: #05204A;
     font-size: 20px;
     font-weight: 500;
     text-align: start;
@@ -123,10 +123,11 @@
   }
   .section-certified-installers-title {
     font-size: 48px;
-    color: #2f4858;
+    color: #05204A;
     margin-bottom: 48px;
   }
   .section-certified-installers-text {
+    color: #05204A;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
@@ -147,8 +148,6 @@
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     padding: 24px;
@@ -159,6 +158,7 @@
     margin-bottom: 1em; /* Taille des logos pour les écrans laptops */
   }
   .logo-text {
+    color: #05204A;
     font-size: 16px;
     font-weight: 500;
     text-align: start;
