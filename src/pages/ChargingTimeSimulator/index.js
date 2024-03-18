@@ -5,11 +5,12 @@ import Header from "../../components/Header";
 import VehicleSelector from "../../components/VehicleSelector";
 import TripTypeSelector from "../../components/TripTypeSelector";
 import ChargingPowerSelector from "../../components/ChargingPowerSelector";
-import ChargingTimeDisplay from "../../components/ChargingTimeDisplay";
 import ProgressSteps from "../../components/ProgressSteps";
 import ColorLine from "../../components/ColorLine";
+import ChargingTimeDisplay from "../../components/ChargingTimeDisplay";
 
 function ChargingTimeSimulator() {
+  
   const currentStep = useSelector(
     (state) => state.ChargingTimeSimulator.currentStep
   );
@@ -25,7 +26,7 @@ function ChargingTimeSimulator() {
           {currentStep === 1 && <VehicleSelector/>}
           {currentStep === 2 && <TripTypeSelector />}
           {currentStep === 3 && <ChargingPowerSelector />}
-          {currentStep === 4 && <ChargingTimeDisplay />}
+          {currentStep === 4 && <ChargingTimeDisplay/>}
         </div>
       </section>
     </>

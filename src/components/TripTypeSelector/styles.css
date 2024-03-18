@@ -7,7 +7,7 @@
 .labels-container {
   display: flex;
   justify-content: space-between;
-  width: 70%; /* Ajuste la largeur du slider selon tes préférences */
+  width: 70%;
   margin: 2rem 2rem 1rem 2rem;
   position: relative;
 }
@@ -32,11 +32,24 @@
   cursor: pointer;
 }
 
-.trip-type-selector img {
+.tripTypeImage{
   width: 100px;
   height: 100px;
   margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
   border-radius: 50%;
+  box-shadow: 12px 12px 24px #c9c9ca, -12px -12px 24px #ffffff;
+}
+.tripTypeImage.active{
+  width: 100px;
+  height: 100px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff, inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 5px rgba(255, 255, 255, 0.25);
+  scale: 1.1;
 }
 .trip-type-selector-title {
   font-size: 30px;
@@ -152,7 +165,7 @@
   width: 70%;
   margin: auto;
   padding: 15px 30px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), #edf1f4);
+  background: linear-gradient(to bottom, rgba(122, 122, 122, 0.1), #edf1f4);
   box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 20px #fff;
   border-radius: 800px;
   display: flex;
@@ -176,6 +189,8 @@
   width: 17px;
   height: 17px;
   background: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff,
+    inset 5px 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   border: 2px solid #00ec99;
   box-shadow: -407px 0 0 400px #00ec99;
@@ -192,5 +207,6 @@
   border-radius: 25px;
   font-weight: 500;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff,
-    inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 5px rgba(255, 255, 255, 0.25);
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.25);
 }

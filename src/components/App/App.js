@@ -3,6 +3,7 @@ import HomePage from "../../pages/HomePage";
 import ServicesOverviewPage from "../../pages/ServicesOverviewPage";
 import ChargingTimeSimulatorIntroduction from "../../pages/ChargingTimeSimulatorIntroduction";
 import ChargingTimeSimulator from "../../pages/ChargingTimeSimulator";
+import ChargingTimeSimulatorResultat from "../../pages/ChargingTimeSimulatorResultat";
 import { Routes, Route } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
@@ -21,18 +22,19 @@ function App() {
         return "/type-trajet";
       case 3:
         return "/puissance-borne";
-      case 4:
-        return "/resultat-simulation";
       default:
         return "/";
     }
   };
 
   useEffect(() => {
-    const path = `/simulateur/temps-de-recharge-voiture-electrique${getPathForStep(currentStep)}`;
-    window.history.replaceState({}, "", path);
+    const path = `/simulateur/temps-de-recharge-voiture-electrique${getPathForStep(
+      currentStep
+    )}`;
+    window.history.replaceState({ path }, "", path);
   }, [currentStep]);
 
+  // ...
 
   return (
     <div className='App'>
@@ -43,7 +45,7 @@ function App() {
           path='/simulateur/temps-de-recharge-voiture-electrique'
           element={<ChargingTimeSimulatorIntroduction />}
         />
-       <Route
+        <Route
           path='/simulateur/temps-de-recharge-voiture-electrique/choix-categorie-vehicule'
           element={<ChargingTimeSimulator />}
         />
@@ -57,7 +59,7 @@ function App() {
         />
         <Route
           path='/simulateur/temps-de-recharge-voiture-electrique/resultat-simulation'
-          element={<ChargingTimeSimulator />}
+          element={<ChargingTimeSimulatorResultat />}
         />
       </Routes>
     </div>

@@ -11,7 +11,7 @@ import {
 
 // Le reducer initial
 const initialState = {
-  vehicleCategory: "",
+  vehicleCategory: "Berline",
   vehicleOptions: [
     { value: "Citadine", label: "Citadine" },
     { value: "Compact", label: "Compact" },
@@ -20,7 +20,7 @@ const initialState = {
     { value: "Luxe", label: "Luxe" },
     { value: "Utilitaire", label: "Utilitaire" },
   ],
-  vehicleBatteryCapacities: {
+  vehiclesCapacities: {
     Citadine: 50, // Capacité de batterie pour la catégorie Citadine (à ajuster selon tes besoins)
     Compact: 60, // Capacité de batterie pour la catégorie Compact
     Berline: 90, // Capacité de batterie pour la catégorie Berline
@@ -28,9 +28,31 @@ const initialState = {
     Luxe: 100, // Capacité de batterie pour la catégorie Luxe
     Utilitaire: 50, // Capacité de batterie pour la catégorie Utilitaire
   },
-  tripType: "ville",
+vehicules : {
+    Citadine: {
+      consommationVille: 12.65,
+      consommationMixte: 15,
+      consommationAutoroute: 18,
+      capaciteBatterie: 50
+    },
+    Compact: {
+      consommationVille: 13.5,
+      consommationMixte: 16.5,
+      consommationAutoroute: 19.5,
+      capaciteBatterie: 60
+    },
+    Berline: {
+      consommationVille: 13.5,
+      consommationMixte: 16.5,
+      consommationAutoroute: 19.5,
+      capaciteBatterie: 60
+    },
+    // Ajoutez d'autres types de véhicules au besoin
+  },
+
+  tripType: "mixte",
   dailyKilometer: 40,
-  chargingPower: 2,
+  chargingPower: "7.4 kW",
   chargingTime: 0,
   currentStep: 1,
   // ... (autres états initiaux)

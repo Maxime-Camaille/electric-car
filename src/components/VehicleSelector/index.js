@@ -20,7 +20,7 @@ const categoryImages = {
   Utilitaire: utilitaireImage,
 };
 
-function VehicleSelector({ nextHandler }) {
+function VehicleSelector() {
   const dispatch = useDispatch();
 
   const currentStep = useSelector(
@@ -68,7 +68,9 @@ function VehicleSelector({ nextHandler }) {
                     onChange={() => onCategoryChange(category)}
                   />
                   <img src={imageUrl} alt={category} />
-                  <p>{category}</p>
+                  <span className={`nameOfCategory ${
+                    selectedCategory === category ? "active" : ""
+                  }`}>{category}</span>
                 </div>
               ))}
             </div>

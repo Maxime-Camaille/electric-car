@@ -6,7 +6,7 @@ import {
 } from "../../actions/ChargingTimeSimulator";
 import villeImage from "../../assets/images/ville.png";
 import mixteImage from "../../assets/images/mixte.png";
-import autorouteImage from "../../assets/images/autoroute.jpg";
+import autorouteImage from "../../assets/images/autoroute.png";
 import lightIcon from "../../assets/images/light-bulb.png";
 import "./styles.css";
 
@@ -41,6 +41,25 @@ function TripTypeSelector() {
 
   return (
     <>
+      <div className='kilometer-slider'>
+        <h2 className='kilometerRange-title'>
+          Choisissez votre kilométrage quotidien :
+        </h2>
+        <div className='kilometerRange-wrapper'>
+          <input
+            type='range'
+            className='kilometerRange-cursor'
+            min={0}
+            max={dailyKilometerOptions.length - 1}
+            step={1}
+            value={dailyKilometerOptions.indexOf(dailyKilometer)}
+            onChange={(e) =>
+              onKilometerChange(dailyKilometerOptions[e.target.value])
+            }
+          />
+          <span className='dailyKilometer'>{dailyKilometer} km/jour</span>
+        </div>
+      </div>
       <div className='trip-type-selector'>
         <h1 className='trip-type-selector-title'>
           Choisissez votre type de trajet :
@@ -59,29 +78,14 @@ function TripTypeSelector() {
                   selectedType === tripType.value ? " checked" : ""
                 }`}
               ></div>
-              <img src={tripType.image} alt={tripType.label} />
-              <span>{tripType.label}</span>
+              <img className={`tripTypeImage${
+                  selectedType === tripType.value ? " active" : ""
+                }`} src={tripType.image} alt={tripType.label} />
+              <span className={`nameOfCategory ${
+                    selectedType === tripType.value ? "active" : ""
+                  }`}>{tripType.label}</span>
             </label>
           ))}
-        </div>
-      </div>
-      <div className='kilometer-slider'>
-        <h2 className='kilometerRange-title'>
-          Choisissez votre kilométrage quotidien :
-        </h2>
-        <div className='kilometerRange-wrapper'>
-          <input
-            type='range'
-            className='kilometerRange-cursor'
-            min={0}
-            max={dailyKilometerOptions.length - 1}
-            step={1}
-            value={dailyKilometerOptions.indexOf(dailyKilometer)}
-            onChange={(e) =>
-              onKilometerChange(dailyKilometerOptions[e.target.value])
-            }
-          />
-          <span className='dailyKilometer'>{dailyKilometer} km/jour</span>
         </div>
       </div>
       <div className='category-explanation'>

@@ -49,8 +49,7 @@
 
   padding: 1rem;
   margin: 1rem;
-  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  box-shadow: 12px 12px 24px #c9c9ca, -12px -12px 24px #ffffff;
   border-radius: 20px;
 }
 .category-vehicule-button:hover {
@@ -96,11 +95,10 @@
 
 
 .category-vehicule-button.active-category {
-  background-color: rgba(255, 255, 255, 0.652);
   border: 2px solid #00ec99;
   color: #00ec99;
   font-weight: bold;
-  box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 9.91px 9.91px 15px #D9DADE, inset -9.91px -9.91px 15px #FFFFFF;
 }
 .category-vehicule-button.active-category img {
   scale: 1.4;
@@ -109,9 +107,24 @@
   width: 80px;
   height: auto;
 }
-.category-vehicule-button p {
-  font-size: 16px;
+.nameOfCategory {
+  width: 100px;
+  font-size: 1.25em;
+  color: #05204a;
+  padding: 0.2em 0.2em;
+  border-radius: 25px;
   font-weight: 500;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff, inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 5px rgba(255, 255, 255, 0.25);
+}
+.nameOfCategory.active {
+  width: 100px;
+  font-size: 1.25em;
+  color: #fff;
+  background: #00ec99;
+  padding: 0.2em 0.2em;
+  border-radius: 25px;
+  font-weight: 500;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff, inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 5px rgba(255, 255, 255, 0.25);
 }
 
 .category-explanation {
