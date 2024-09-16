@@ -6,7 +6,7 @@
 
 ## Description
 
-Bienvenue sur notre site dédié à la vente de prestations d'installation de bornes de recharge électrique ! Le site propose une présentation claire de nos services, une FAQ complète et un simulateur de temps de recharge accessible depuis la FAQ pour estimer vos besoins en fonction de votre véhicule et du type de borne choisi. Explorez nos offres et trouvez la solution adaptée à vos besoins d'énergie verte !
+Bienvenue sur un site dédié à la vente de prestations d'installation de bornes de recharge électrique ! Le site propose une page d'accueil moderne, une présentation rapide des services et un simulateur de temps de recharge accessible depuis la FAQ. Le projet n'est pas terminé et est toujours en construction.
 
 ## Consultation du site
 
