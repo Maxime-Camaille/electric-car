@@ -21,33 +21,51 @@ const initialState = {
     { value: "Utilitaire", label: "Utilitaire" },
   ],
   vehiclesCapacities: {
-    Citadine: 50, // Capacité de batterie pour la catégorie Citadine (à ajuster selon tes besoins)
-    Compact: 60, // Capacité de batterie pour la catégorie Compact
-    Berline: 90, // Capacité de batterie pour la catégorie Berline
-    SUV: 70, // Capacité de batterie pour la catégorie SUV
-    Luxe: 100, // Capacité de batterie pour la catégorie Luxe
-    Utilitaire: 50, // Capacité de batterie pour la catégorie Utilitaire
+    Citadine: 50, // Capacité de batterie pour la catégorie Citadine (en kWh)
+    Compact: 60, // Capacité de batterie pour la catégorie Compact (en kWh)
+    Berline: 75, // Capacité de batterie pour la catégorie Berline (en kWh)
+    SUV: 85, // Capacité de batterie pour la catégorie SUV (en kWh)
+    Luxe: 100, // Capacité de batterie pour la catégorie Luxe (en kWh)
+    Utilitaire: 60, // Capacité de batterie pour la catégorie Utilitaire (en kWh)
   },
-vehicules : {
+
+  vehicules: {
     Citadine: {
-      consommationVille: 12.65,
-      consommationMixte: 15,
-      consommationAutoroute: 18,
-      capaciteBatterie: 50
+      consommationVille: 12.65, // en kWh/100 km
+      consommationMixte: 15, // en kWh/100 km
+      consommationAutoroute: 18, // en kWh/100 km
+      capaciteBatterie: 50, // en kWh
     },
     Compact: {
-      consommationVille: 13.5,
-      consommationMixte: 16.5,
-      consommationAutoroute: 19.5,
-      capaciteBatterie: 60
+      consommationVille: 13.5, // en kWh/100 km
+      consommationMixte: 16.5, // en kWh/100 km
+      consommationAutoroute: 19.5, // en kWh/100 km
+      capaciteBatterie: 60, // en kWh
     },
     Berline: {
-      consommationVille: 13.5,
-      consommationMixte: 16.5,
-      consommationAutoroute: 19.5,
-      capaciteBatterie: 60
+      consommationVille: 15, // en kWh/100 km
+      consommationMixte: 17.5, // en kWh/100 km
+      consommationAutoroute: 20, // en kWh/100 km
+      capaciteBatterie: 75, // en kWh
     },
-    // Ajoutez d'autres types de véhicules au besoin
+    SUV: {
+      consommationVille: 18, // en kWh/100 km
+      consommationMixte: 21, // en kWh/100 km
+      consommationAutoroute: 24, // en kWh/100 km
+      capaciteBatterie: 85, // en kWh
+    },
+    Luxe: {
+      consommationVille: 20, // en kWh/100 km
+      consommationMixte: 22, // en kWh/100 km
+      consommationAutoroute: 26, // en kWh/100 km
+      capaciteBatterie: 100, // en kWh
+    },
+    Utilitaire: {
+      consommationVille: 25, // en kWh/100 km
+      consommationMixte: 27, // en kWh/100 km
+      consommationAutoroute: 30, // en kWh/100 km
+      capaciteBatterie: 60, // en kWh
+    },
   },
 
   tripType: "mixte",

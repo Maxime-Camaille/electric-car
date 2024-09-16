@@ -14,7 +14,16 @@ import greenUpImage from "../../assets/images/priseGreenUp.png";
 import wallBox from "../../assets/images/wallBox.png";
 import evBox from "../../assets/images/evBox.png";
 import copper from "../../assets/images/copper.png";
-import temperature from "../../assets/images/temperature.png";
+
+function calculateChargingTime(consommationMoyenne, distance, puissanceBorne) {
+  // Calcul de l'énergie nécessaire pour parcourir la distance
+  const energieNecessaire = (consommationMoyenne * distance) / 100;
+  
+  // Calcul du temps de recharge en heures
+  const tempsDeRecharge = energieNecessaire / puissanceBorne;
+
+  return tempsDeRecharge;
+}
 
 function ChargingTimeDisplay() {
   const categoryImages = {
@@ -53,6 +62,29 @@ function ChargingTimeDisplay() {
   const selectedPower = useSelector(
     (state) => state.ChargingTimeSimulator.chargingPower
   );
+
+  const vehicles = useSelector((state) => state.ChargingTimeSimulator.vehicules);
+
+  // Obtenir les valeurs pour le véhicule sélectionné
+  const vehicle = vehicles[selectedCategory];
+  const consommationMoyenne = vehicle[`consommation${selectedType.charAt(0).toUpperCase() + selectedType.slice(1)}`];
+  const batteryCapacity = vehicle.capaciteBatterie;
+
+  // Convertir la puissance de charge en nombre (supprimer "kW" et convertir en nombre)
+  const puissanceBorne = parseFloat(selectedPower);
+
+  // Calcul de l'énergie nécessaire pour parcourir la distance quotidienne
+  const energieNecessaire = (consommationMoyenne * dailyKilometer) / 100;
+
+  // Vérifier que l'énergie à recharger ne dépasse pas la capacité totale de la batterie
+  const energieARecharger = Math.min(energieNecessaire, batteryCapacity);
+
+  // Calcul du temps de recharge estimé
+  const chargingTimeInHours = energieARecharger / puissanceBorne;
+
+  // Convertir le temps en heures et minutes
+  const hours = Math.floor(chargingTimeInHours);
+  const minutes = Math.round((chargingTimeInHours - hours) * 60);
 
   return (
     <div className='ChargingTimeDisplay-wrapper'>
@@ -112,44 +144,15 @@ function ChargingTimeDisplay() {
           </h1>
           <div className='recharge-time-text'>
             <div className='battery-container'>
-              <div class='battery'>
-                <div class='liquid'></div>
+              <div className='battery'>
+                <div className='liquid'></div>
               </div>
             </div>
-            <span>6 h 43</span>
+            <span>{hours} h {minutes} min</span>
           </div>
           <p>
             Durée de charge simulée sur la base des paramètres sélectionnés. La
             durée de charge réelle peut varier.
-          </p>
-          <img
-            className='temperature-image'
-            src={temperature}
-            alt='thermometre'
-          />
-          <p>
-            De manière générale, la batterie se recharge le plus rapidement
-            lorsque la température de la batterie est comprise entre 20 et 30
-            degrés, alors que la durée de recharge est plus longue lorsque la
-            température est basse.
-          </p>
-          <img
-            className='temperature-image'
-            src={temperature}
-            alt='thermometre'
-          />
-          <p>
-            la durée de recharge est plus longue lorsque la batterie est presque
-            vide que lorsqu’elle est à moitié pleine.
-          </p>
-          <img
-            className='temperature-image'
-            src={temperature}
-            alt='thermometre'
-          />
-          <p>
-            autonomie restante par rapport à votre profil de conduite pour vos
-            trajets du quotidien
           </p>
         </div>
       </section>
